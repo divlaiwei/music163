@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+/*		    position: relative;*/
+            background:#333 url("img/wbg.jpg") no-repeat; /*添加的背景图*/
+            /*防止出现向下滚动条*/
+            overflow: hidden;
+        }
+        p{
+	     margin-top:10px;
+/*		 padding: 10px 10px 5px 15px;*/
+		 font-size:16px;
+	   }
+       label{
+		  font-size:15px;
+		  font-color:#fff;
+		}
+        
+        
+
+	   .fm{
+/*          position:absolute;*/
+        
+	      margin-left:780px;
+		  margin-top:264px;
+	      width:320px;
+		  height:220px;
+	      display:block;
+	      border:1px solid red;
+		  text-align:center;		  
+		  border-radius:15px;
+		  background-color:#333;
+		  z-index:10;
+	   }
+    
+
+      .btn{
+	       border-radius:5px;
+	  }
+    </style>
+	<script src="css/login.css"></script>
+</head>
+<body>
+    <div id="container">
+    
+	</div>
+	
+	<div class="rain">
+       <div class="border">
+        <form class="fm">
+            <p><label for="uname">用户姓名</label></p>
+			<p>
+            <input name="uname" type="text" placeholder="请输入登录账户..."/>
+			</p>
+            <p><label for="upwd">用户密码</label></p>
+            <p>
+             <input name="upwd" type="password" placeholder="请输入登录密码..."/>
+		    </p>
+			<div>
+            <button class="btn">提交</button>
+              <a href='#'>忘记密码?</a>
+	      
+		   </div>
+        </form>
+    </div>
+</div>
+
+
+     
+<script src="js/jquery.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
